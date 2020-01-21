@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reservations</title>
+    <link rel="stylesheet" type="text/css" href="reserve.css">
+  </head>
+  <body>
+
+      </div>
+<nav>
+<p> GRAND HOTEL.COM
+</p>
+        <ul>
+        <li><a href="qq.html"class="cool-link">Home</a></li>
+        <li><a href="about.html"class="cool-link">About</a></li>
+        <li><a href="contact.html"class="cool-link">Contact Us</a>
+        	<ul>
+        		<li><a href="contact.html"class="cool-link">HOTEL - (+94) 081 2030400-5</a></li>
+                <li><a href="contact.html"class="cool-link">E-mail - hotel.colina@gmail.com</a></li>
+        		<li><a href="contact.html"class="cool-link">RESERVATIONS - (+94) 081 2030407</a></li>
+        	</ul>
+        </li>
+
+        <li><a href="reserve.html"class="cool-link">Reserve</a></li>
+        <li><a href="Gallery.html"class="cool-link">Gallery</a></li>
+      </ul>
+      </nav>
+      <br>
+
+<button class="open-button" onclick="openForm()">RESERVE NOW!</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/reserve.php" class="form-container" method="post">
+    <h1><CENTER>Login</h1></CENTER>
+    <BR>
+
+    <label for="FIRST NAME"><b>FIRST NAME</b></label>
+    <input type="text" placeholder="Enter FIRST NAME" name="firstname" required>
+
+    <label for="LAST NAME"><b>LAST NAME</b></label>
+    <input type="text" placeholder="Enter LAST NAME" name="lastname" required>
+
+    <label for="email"><b>EMAIL</b></label>
+    <input type="text" placeholder="Enter Email" name="mail" required>
+
+    <label for="number"><b>Number of Guests</b></label>
+    <input type="number" placeholder="Guests" name="guests" required>
+<br>
+<td >Check-In Date</td>
+<input type="DATE" placeholder="dd/mm/yyyy" name="indate" required><BR>
+<td >Check-In Date</td>
+<input type="DATE" placeholder="dd/mm/yyyy" name="outdate" required>
+<BR>
+<BR>
+
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
